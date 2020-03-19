@@ -1,0 +1,2 @@
+# udev rules for Pixhawk
+SUBSYSTEM=="tty", ATTRS{idVendor}=="26ac", ATTRS{idProduct}=="0011", SYMLINK+="ttyPixhawk"
