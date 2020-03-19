@@ -1,2 +1,4 @@
 # FLIR Lepton Camera
 SUBSYSTEM=="video4linux", ATTR{name}=="PureThermal (fw:v1.2.2)", SYMLINK+="ttyLepton"
+SUBSYSTEM=="video4linux", ATTR{name}=="PureThermal (fw:v1.2.2): PureTh", SYMLINK+="ttyLepton"
+
