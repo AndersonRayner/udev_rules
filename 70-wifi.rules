@@ -1,0 +1,3 @@
+# WiFi network adaptor static names
+SUBSYSTEM=="net", ACTION=="add", ATTR{address}=="dc:a6:32:06:41:e0", NAME="wifi_internal"
+SUBSYSTEM=="net", ACTION=="add", ATTR{address}=="9c:ef:d5:fc:14:0e", NAME="wifi_external"
