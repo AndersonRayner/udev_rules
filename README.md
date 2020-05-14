@@ -26,3 +26,11 @@ You can then check it worked by
 ```
 ls /dev/tty*
 ```
+
+# Linking git udev rules to System udev Rules
+Done through a symbolic link.  Run the following command from the git udev rules directory.
+WARNING: Make sure nothing is in the udev rules folder before doing this...
+```
+sudo rm -r /etc/udev/rules.d/
+sudo ln -s ~/Documents/udev_rules/ /etc/udev/rules.d
+```
