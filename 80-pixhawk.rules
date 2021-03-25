@@ -1,7 +1,12 @@
 # udev rules for Pixhawk
 
 # Pixhawk Autopilots
-SUBSYSTEM=="tty", ATTRS{idVendor}=="26ac", ATTRS{idProduct}=="0011", SYMLINK+="ttyPixhawk"
+# ------------------
+
+# Pixracer (and probably others)
+SUBSYSTEM=="tty", ATTRS{manufacturer}=="3D Robotics", ATTRS{product}=="PX4 FMU*", SYMLINK+="ttyPixhawk"
+
 
 # Radios
+# ----------
 SUBSYSTEM=="tty", ATTRS{manufacturer}=="Silicon Labs", SYMLINK+="ttySiK"
