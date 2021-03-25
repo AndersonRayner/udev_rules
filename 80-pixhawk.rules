@@ -3,8 +3,11 @@
 # Pixhawk Autopilots
 # ------------------
 
-# Pixracer (and probably others)
+# Pixracer (and probably others with PX4 installed)
 SUBSYSTEM=="tty", ATTRS{manufacturer}=="3D Robotics", ATTRS{product}=="PX4 FMU*", SYMLINK+="ttyPixhawk"
+
+# Pixracer (and probably others with ArduPilot installed)
+SUBSYSTEM=="tty", ATTRS{manufacturer}=="ArduPilot", ATTRS{product}=="Pixracer*", SYMLINK+="ttyPixhawk"
 
 
 # Radios
