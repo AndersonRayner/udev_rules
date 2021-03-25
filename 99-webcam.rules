@@ -1,2 +1,0 @@
-# FLIR Lepton Camera
-SUBSYSTEM=="video4linux", ATTR{name}=="Integrated_Webcam_HD: Integrate", SYMLINK+="ttyWebcam"
