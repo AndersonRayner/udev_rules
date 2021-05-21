@@ -6,8 +6,11 @@
 # Pixracer (and probably others with PX4 installed)
 SUBSYSTEM=="tty", ATTRS{manufacturer}=="3D Robotics", ATTRS{product}=="PX4 FMU*", SYMLINK+="ttyPixhawk"
 
-# Pixracer (and probably others with ArduPilot installed)
-SUBSYSTEM=="tty", ATTRS{manufacturer}=="ArduPilot", ATTRS{product}=="Pixracer*", SYMLINK+="ttyPixhawk"
+# Pixracer, Pixhawk 4 (and probably others with ArduPilot installed)
+SUBSYSTEM=="tty", ATTRS{manufacturer}=="ArduPilot", ATTRS{product}=="Pix*", SYMLINK+="ttyPixhawk"
+
+# Pixhawk 4 (ArduPilot)
+SUBSYSTEM=="tty", ATTRS{manufacturer}=="ArduPilot", ATTRS{product}=="Pixhawk4", SYMLINK+="ttyPixhawk"
 
 
 # Radios
