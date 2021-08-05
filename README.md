@@ -17,6 +17,12 @@ udevadm info -a -p /sys/class/tty/(PORT)
 ```
 In our case, this will (PORT) will most likely be something like ttyACM0
 
+Non-serial devices (such as cameras) use the video4linux driver
+```
+udevadm info -a -p /sys/class/video4linux/(VIDEO)
+```
+where (VIDEO) will most likely be something like video0
+
 ### Notes
 * Have to use subsystem tty if you want to talk to it as a tty
 * Can use product or vendor or something to identify the device

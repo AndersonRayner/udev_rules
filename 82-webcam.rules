@@ -1,2 +1,6 @@
-# FLIR Lepton Camera
+
+# Lapton Webcam
 SUBSYSTEM=="video4linux", ATTR{name}=="Integrated_Webcam_HD*", SYMLINK+="vWebcam"
+
+# USB Webcam (Logi)
+SUBSYSTEM=="video4linux", ATTRS{idVendor}=="046d", ATTRS{idProduct}=="0825", SYMLINK+="vLogi"
