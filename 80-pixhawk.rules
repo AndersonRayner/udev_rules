@@ -12,6 +12,9 @@ SUBSYSTEM=="tty", ATTRS{manufacturer}=="ArduPilot", ATTRS{product}=="Pix*", SYML
 # Pixhawk 4 (ArduPilot)
 SUBSYSTEM=="tty", ATTRS{manufacturer}=="ArduPilot", ATTRS{product}=="Pixhawk4", SYMLINK+="ttyPixhawk"
 
+# Generic FTDI Adaptors
+SUBSYSTEM=="tty", ATTRS{manufacturer}=="FTDI", ATTRS{product}=="TTL232R-3V3", ATTRS{serial}=="FTFMF4KI", SYMLINK+="ttyPixhawk"
+
 
 # Radios
 # ----------
