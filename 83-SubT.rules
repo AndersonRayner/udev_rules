@@ -4,7 +4,7 @@
 SUBSYSTEM=="tty", ATTRS{manufacturer}=="Jet Propulsion Laboratory", ATTRS{product}=="SubT Gen4 Power Board", SYMLINK+="ttyPowerBoard"
 
 # CommDropper
-SUBSYSTEM=="usb", ATTRS{manufacturer}=="SubT", ATTRS{product}="commDropper", SYMLINK+="ttyCommDropper"
+SUBSYSTEM=="tty", ATTRS{manufacturer}=="Jet Propulsion Laboratory", ATTRS{product}=="commDropper", SYMLINK+="ttyDropper"
 
 # CO2 Sensor
 SUBSYSTEM=="tty", ATTRS{manufacturer}=="Jet Propulsion Laboratory", ATTRS{product}=="SubT CO2 Module", SYMLINK+="ttyCO2"
