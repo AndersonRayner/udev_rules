@@ -3,4 +3,4 @@ SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{seria
 
 # ADK
 SUBSYSTEM=="tty", ATTRS{idVendor}=="09cb", ATTRS{idProduct}=="4007", SYMLINK+="ttyBoson"
-SUBSYSTEM=="video4linux", ATTR{name}=="Boson: FLIR Video", ATTR{index}=="0", SYMLINK+="vBoson"
+SUBSYSTEM=="video4linux", ATTR{name}=="Boson*", ATTR{index}=="0", SYMLINK+="vBoson"
