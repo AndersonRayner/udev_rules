@@ -1,0 +1,4 @@
+# UDEV Rules for Arduino boards
+
+# FTDI Adaptor for connecting to a Pro Mini (or other)
+SUBSYSTEM=="tty", ATTRS{manufacturer}=="FTDI", ATTRS{product}=="FT232R USB UART", ATTRS{serial}=="A904QE06", SYMLINK+="ttyFTDI"
