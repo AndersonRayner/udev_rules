@@ -2,3 +2,6 @@
 
 # FTDI Adaptor for connecting to a Pro Mini (or other)
 SUBSYSTEM=="tty", ATTRS{manufacturer}=="FTDI", ATTRS{product}=="FT232R USB UART", ATTRS{serial}=="A904QE06", SYMLINK+="ttyFTDI"
+
+# Raspberry Pi Pico (with Arduino Bootloader)
+SUBSYSTEM=="tty", ATTRS{manufacturer}=="Arduino", ATTRS{product}=="RaspberryPi Pico", SYMLINK+="ttyArduino"
