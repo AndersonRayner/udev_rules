@@ -1,2 +1,6 @@
 # FLIR Lepton Camera
 SUBSYSTEM=="video4linux", ATTR{index}=="0", ATTR{name}=="PureThermal*", SYMLINK+="vLepton"
+
+# FLIR Boson
+SUBSYSTEM=="video4linux", ATTRS{manufacturer}=="FLIR", ATTRS{product}=="Boson", ATTR{index}=="0", SYMLINK+="vBoson", GROUP="dialout"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="09cb", ATTRS{idProduct}=="4007", SYMLINK+="ttyBoson", GROUP="dialout"

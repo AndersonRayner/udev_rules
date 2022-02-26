@@ -1,0 +1,2 @@
+# UBlox GPS
+SUBSYSTEM=="tty", ATTRS{product}=="u-blox GNSS receiver", SYMLINK+="ttyGPS"
