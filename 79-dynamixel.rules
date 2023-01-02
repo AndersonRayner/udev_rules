@@ -1,0 +1,5 @@
+# udev rules for Dynamixel Servos
+
+# Generic FTDI Adaptors
+SUBSYSTEM=="tty", ATTRS{manufacturer}=="FTDI", ATTRS{product}=="USB <-> Serial Converter", ATTRS{serial}=="FT6RWCPN", SYMLINK+="ttyDynamixel"
+
