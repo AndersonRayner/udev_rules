@@ -1,2 +1,3 @@
 # Vector Nav
 SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="FTZ6UWYU", SYMLINK+="ttyVN100"
+SUBSYSTEM=="tty", ATTRS{idVendor}=="0403", ATTRS{idProduct}=="6001", ATTRS{serial}=="FT0MKTLP", SYMLINK+="ttyVN100"
